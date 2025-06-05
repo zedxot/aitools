@@ -1,0 +1,19 @@
+/*
+This file is mostly empty because Tailwind CSS provides utility-first styling.
+You can add any custom CSS overrides or additional styles here if necessary.
+For example:
+*/
+
+/* Example for a custom scrollbar if Tailwind doesn't fully cover it */
+/* (Note: Some scrollbar styling is already in index.html for Webkit and Firefox) */
+
+/*
+.my-custom-class {
+    @apply text-red-500 font-bold;
+}
+*/
+
+/* If you were using a build process for Tailwind, this is where you'd typically include: */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
