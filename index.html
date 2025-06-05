@@ -34,10 +34,11 @@
             Comprehensive AI Tools & Models Database
         </h1>
 
+        <div class="flex flex-row gap-8">
         <!-- Filter Section -->
-        <div id="filters" class="bg-white shadow-lg rounded-lg p-6 mb-8 border border-blue-100">
+        <div id="filters" class="w-1/4 bg-white shadow-lg rounded-lg p-6 mb-8 border border-blue-100 max-h-[calc(100vh-16rem)] overflow-y-auto">
             <h2 class="text-2xl font-semibold text-blue-600 mb-5">Filter Options</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 gap-6">
 
                 <!-- Search Input -->
                 <div>
@@ -144,7 +145,7 @@
         </div>
 
         <!-- Table Section -->
-        <div class="overflow-x-auto shadow-lg rounded-lg border border-blue-100">
+        <div class="w-3/4 overflow-x-auto shadow-lg rounded-lg border border-blue-100 max-h-[calc(100vh-16rem)] overflow-y-auto">
             <table class="min-w-full divide-y divide-blue-200">
                 <thead class="bg-blue-600 text-white sticky top-0 z-10">
                     <tr>
@@ -168,6 +169,8 @@
             </table>
             <div id="no-results" class="hidden text-center py-8 text-gray-500 text-lg">No tools found matching your filters.</div>
         </div>
+        </div>
+
     </div>
 
     <!-- Main JavaScript file -->
