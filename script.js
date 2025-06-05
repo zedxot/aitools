@@ -138,16 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const row = document.createElement('tr');
             row.className = 'hover:bg-blue-50 transition duration-150 ease-in-out';
             row.innerHTML = `
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-blue-700">
+                <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-blue-700">
                     ${tool.name}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     ${tool.developer_company || 'N/A'}
                 </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
+                <td class="px-3 py-2 text-sm text-gray-600">
                     ${tool.category_use_case ? tool.category_use_case.join(', ') : 'N/A'}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full
                         ${tool.pricing_model === 'Open Source' ? 'bg-green-100 text-green-800' :
                           tool.pricing_model === 'Free' ? 'bg-indigo-100 text-indigo-800' :
@@ -156,29 +156,29 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${tool.pricing_model || 'N/A'}
                     </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     ${tool.license_type || 'N/A'}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     ${tool.modality || 'N/A'}
                     ${tool.modality === 'Single-modal' && tool.modality_type ? ` (${tool.modality_type.join(', ')})` : ''}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     ${tool.api_available ? 'Yes' : 'No'}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     ${tool.number_of_parameters || 'N/A'}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     ${tool.release_year || 'N/A'}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-gray-600">
                     ${tool.country_of_origin || 'N/A'}
                 </td>
-                <td class="px-6 py-4 text-sm text-gray-600 max-w-xs overflow-hidden text-ellipsis">
+                <td class="px-3 py-2 text-sm text-gray-600 max-w-xs overflow-hidden text-ellipsis">
                     ${tool.short_description || 'N/A'}
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
+                <td class="px-3 py-2 whitespace-nowrap text-sm text-blue-600 hover:text-blue-800">
                     ${tool.link ? `<a href="${tool.link}" target="_blank" rel="noopener noreferrer" class="font-medium">Link</a>` : 'N/A'}
                 </td>
             `;
